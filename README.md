@@ -27,7 +27,7 @@ The objective was to understand how attackers operate and how their activities c
 - Multiple failed login attempts detected
 - Wazuh rules triggered for authentication failures
 
-<img src="screenshots/ssh-brute-force.png" width="800"/>
+<img src="screenshots/SSH-brute-force.png" width="800"/>
 
 ---
 

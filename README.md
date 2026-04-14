@@ -1,6 +1,6 @@
 # 🛡️ Wazuh Linux Attack Detection Lab
 
-> Simulated and detected a full Linux attack chain using Wazuh SIEM in a SOC lab environment.
+** Simulated and detected a full Linux attack chain using Wazuh SIEM in a SOC lab environment. **
 
 ---
 
@@ -27,6 +27,8 @@ The objective was to understand how attackers operate and how their activities c
 - Multiple failed login attempts detected
 - Wazuh rules triggered for authentication failures
 
+<img src="screenshots/event-logs.png" width="800"/>
+
 <img src="screenshots/SSH-brute-force.png" width="800"/>
 
 ---
@@ -35,7 +37,7 @@ The objective was to understand how attackers operate and how their activities c
 - Attacker gained access after repeated attempts
 - Authentication success logs captured
 
-<img src="screenshots/login-success.png" width="800"/>
+<img src="screenshots/ssh-login-success.png" width="800"/>
 
 ---
 
@@ -43,7 +45,7 @@ The objective was to understand how attackers operate and how their activities c
 - Executed `sudo su` to gain root access
 - Detected via Wazuh logs
 
-<img src="screenshots/privilege-escalation.png" width="800"/>
+<img src="screenshots/privilege-escalaction.png" width="800"/>
 
 ---
 
@@ -51,15 +53,27 @@ The objective was to understand how attackers operate and how their activities c
 - Created a new user (`hacker`)
 - Password set for persistence
 
-<img src="screenshots/user-creation.png" width="800"/>
+  ```
+  sudo useradd hacker
+  sudo passwd password
+
+  ```
+
+<img src="screenshots/new-user.png" width="800"/>
+
+<img src="screenshots/hacker.png" width="800"/>
 
 ---
+
+
+## 🔥 File Integrity Monitoring (FIM) was used to detect persistence (authorized_keys modification) and defense evasion (log tampering).
+
 
 ### 🔑 5. SSH Backdoor (authorized_keys)
 - Added SSH key for persistent access
 - Detected using file monitoring
 
-<img src="screenshots/ssh-backdoor.png" width="800"/>
+
 
 ---
 
@@ -67,7 +81,7 @@ The objective was to understand how attackers operate and how their activities c
 - Cleared `/var/log/auth.log` to remove traces
 - Demonstrates defense evasion technique
 
-<img src="screenshots/log-tampering.png" width="800"/>
+
 
 ---
 
@@ -75,7 +89,7 @@ The objective was to understand how attackers operate and how their activities c
 - Detected new listening ports
 - Possible tunneling/backdoor activity observed
 
-<img src="screenshots/network-activity.png" width="800"/>
+<img src="screenshots/netcat.png" width="800"/>
 
 ---
 

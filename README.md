@@ -1,12 +1,15 @@
-# 🛡️ Wazuh Linux Attack Detection Lab
+# 🚀 SOC Lab Project: Wazuh Linux Attack Detection
 
 ![Wazuh](https://img.shields.io/badge/SIEM-Wazuh-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-green)
 ![Attack](https://img.shields.io/badge/Attack-SSH%20Brute%20Force-red)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-This project demonstrates end-to-end attack simulation and detection using Wazuh SIEM in a SOC environment.
+Simulated a full attack lifecycle on Linux and detected it using Wazuh SIEM, including brute force, privilege escalation, persistence, and defense evasion techniques.
 ---
+## 🌍 Real-World Relevance
+
+This project simulates how SOC analysts detect and investigate real-world attacks using SIEM tools and log correlation.
 
 ## 📌 Overview
 
@@ -14,14 +17,14 @@ This project demonstrates a **real-world SOC (Security Operations Center) scenar
 
 The objective was to understand how attackers operate and how their activities can be monitored, correlated, and analyzed from a defender’s perspective.
 
+👉 Detailed technical analysis available in the documentation section below.
 ---
+## 🎯 Key Highlights
 
-## 🎯 Lab Objectives
-
-- Simulate real-world attack scenarios on Linux
-- Monitor logs using Wazuh SIEM
-- Perform log analysis and event correlation
-- Map detected activities to MITRE ATT&CK framework
+- Simulated real-world attack chain (Brute Force → Root Access → Persistence)
+- Correlated multiple Wazuh rule IDs for detection
+- Implemented File Integrity Monitoring (FIM)
+- Mapped detections to MITRE ATT&CK framework
 
 ---
 
@@ -91,6 +94,16 @@ All attack activities were:
 - Gained hands-on experience in threat detection  
 
 ---
+
+## 🧠 Skills Demonstrated
+
+- Log Analysis (Linux)
+- SIEM (Wazuh)
+- Threat Detection & Correlation
+- MITRE ATT&CK Mapping
+- Incident Analysis
+
+
 
 ## 📸 Screenshots
 

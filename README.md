@@ -39,6 +39,10 @@ The objective was to understand how attackers operate and how their activities c
 
 ---
 
+## 📚 Project Documentation
+
+- ⚔️ Attack Scenarios: [View Details](attack-scenarios.md)  
+- 🔍 Detection Analysis: [View Analysis](detection-analysis.md)
 
 ## 📊 Detection & Analysis
 
